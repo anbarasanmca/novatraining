@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>Registration Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="firstName" class="col-sm-3 control-label">Full Name</label>
+            <div class="col-sm-9">
+                <input  ng-model="a.fname">
+            </div>
+        </div>
+    </form>
+    <form>
+        <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">Email</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" ng-model="a.lname">
+            </div>
+        </div>
+    </form>
+    <p>
+    <div class="form-group">
+        <div class="col-sm-9 col-sm-offset-3">
+            <button type="submit" ng-click="FormSubmit(a)" class="btn btn-primary btn-block">Register</button>
+        </div>
+    </div>
+    <div ng-repeat="x in userDataList">
+        {{x.name}}
+    </div>
+</div>
